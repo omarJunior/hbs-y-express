@@ -1,0 +1,43 @@
+{{> header  title="Actualizar usuario"}}
+
+{{!-- 
+first_name,
+        last_name,
+        phone,
+        organization,
+        designation,
+        salary,
+        created_at
+ --}}
+
+{{!-- Contenido --}}
+    <form action="/auth/user/update/{{datos.id}}" class="d-grid w-50 m-auto mt-4" method="post">
+    <h3 class="text-white">{{titulo}}</h3>
+    <div class="mb-3">
+        <input type="text" class="form-control"  name="first_name" value="{{datos.first_name}}" id="first_name" placeholder="Nombres" required autofocus>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="last_name" value="{{datos.last_name}}" id="last_name" placeholder="Apellidos" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="phone" value="{{datos.phone}}" id="phone" placeholder="Telefono" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="organization" value="{{datos.organization}}" id="organization" placeholder="Organizacion" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="designation" value="{{datos.designation}}" id="designation" placeholder="Profesion" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="salary" value="{{datos.salary}}" id="salary" placeholder="Salario" required>
+    </div>
+    <div class="mb-3">
+        <input type="date" class="form-control" name="created_at" id="created_at" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar datos</button>
+    <button type="reset" class="btn btn-secondary">Resetear</button>
+</form>
+ 
+
+{{> footer  data="Omar-breiner2021 - fecha:"}}

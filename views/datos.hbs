@@ -1,0 +1,47 @@
+{{> header  title="Datos usuario"}}
+
+<h3 style="text-align: center;">Datos del usuario</h3>
+  {{#if resultado}}
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                    <th>Organizacion</th>
+                    <th>Profesion</th>
+                    <th>Salario</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each resultado }}
+                    <tr>
+                       <td>{{this.id}}</td>
+                        <td>{{this.first_name}}</td>
+                        <td>{{this.last_name}}</td>
+                        <td>{{this.email}}</td>
+                        <td>{{this.phone}}</td>
+                        <td>{{this.organization}}</td>
+                        <td>{{this.designation}}</td>
+                        <td>{{this.salary}}</td>
+                        <td>
+                            <a href="/auth/user/data/{{this.id}}"><span class="fas fa-edit"></span></a>
+                            <a href="/auth/user/delete/{{this.id}}"><span class="fas fa-trash"></span></a>
+                        </td>
+                    </tr>
+                {{/each}}
+            </tbody>
+        </table>
+{{else}}
+    <div class="col-md-4 mx-auto bg-secondary">
+        <p>No hay data en la base de datos</p>
+        <a href="/auth/home/registro">Crea un usuario</a>
+    </div>
+{{/if}}
+
+
+          
+{{> footer  data="Omar-breiner2021 - fecha:"}}

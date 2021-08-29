@@ -1,0 +1,43 @@
+{{> header  title="Formulario para insertar"}}
+    
+{{#if data}}
+    <p style="color: #fff; background: green;">{{data}}</p>
+{{/if}}
+{{!-- Contenido --}}
+    <form action="/auth/user"  method="post" class="d-grid w-50 m-auto mt-4">
+    <h3 class="text-white">{{titulo}}</h3>
+    <div class="mb-3">
+        <input type="text" class="form-control"  name="first_name" id="first_name" placeholder="Nombres" required autofocus>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="last_name" id="last_name" placeholder="Apellidos" required>
+    </div>
+    <div class="mb-3">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+    </div>
+    <div class="mb-3">
+        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="Telefono" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="organization" id="organization" placeholder="Organizacion" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="designation" id="designation" placeholder="Profesion" required>
+    </div>
+    <div class="mb-3">
+        <input type="text" class="form-control" name="salary" id="salary" placeholder="Salario" required>
+    </div>
+        <div class="mb-3">
+        <input type="text" class="form-control" name="status" id="status" placeholder="Status" required>
+    </div>
+    <div class="mb-3">
+        <input type="date" class="form-control" name="created_at" id="created_at" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Enviar datos</button>
+    <button type="reset" class="btn btn-secondary">Resetear</button>
+</form>
+{{> footer  data="Omar-breiner2021 - fecha:"}}

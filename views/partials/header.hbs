@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+      /*Estilo para el contenido */
+        body{
+        font-family: sans-serif;
+        background-image: url("https://previews.123rf.com/images/pavelalexeev/pavelalexeev1710/pavelalexeev171000018/87556671-patr%C3%B3n-de-color-gris-textil-fondo-y-textura-abstractos-.jpg");    
+        }
+
+    h1{
+        padding: 5px;
+        background-color: #48e;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .container .card-group{
+        max-height: 100% !important;
+    }
+
+    .container .card{
+        padding: 2px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .container .card .card-title{
+      text-align: center;
+      text-shadow: 0px 0px 1px #48e , 0px 0px 1px #48e , 0px 2px 2px gray,  0px 3px 2px gray;
+    }
+
+    .container .card img{
+        border: none;
+        width: 200px;
+        height: 100px;
+        margin: auto;
+    }
+
+    form{
+      box-sizing: border-box;
+      padding: 10px;
+      background: rgba(0,0,0,0.4);
+      border-radius: 10px;
+      border: 3px solid rgb(56, 53, 53);
+    }
+
+    form h3, label{
+      font-family: sans-serif; 
+      letter-spacing: 2px;
+      text-shadow: 0px 0px 1px rgb(70, 68, 68), 0px 0px 1px rgb(70, 68, 68), 0px 0px 1px rgb(70, 68, 68);
+      text-align: center;
+    }
+
+    form input::placeholder{
+      font-size: 18px;
+    }
+
+    form button{
+      margin-bottom: 5px;
+    }
+
+    table{
+      margin: auto;
+      width: 90% !important;
+      background: #eee;
+    }
+
+    table span{
+      font-size: 20px;
+    }
+
+    .div-both{
+      clear: both;
+    }
+
+    /* Estilo del footer*/
+    .footer footer{
+      background-color: #eee;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      clear: both;
+      margin-top: 20px;
+      padding: 10px;
+      text-align: center;
+      letter-spacing: 2px;
+      text-shadow: 0px 0px 1px #eee, 0px 0px 1px #eee, 0px 0px 1px #eee;
+      align-self: flex-end;
+    }
+    </style>
+</head>
+<body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/auth/home">CRUD</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Opciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="/auth/user">Obtener usuarios</a></li>
+                  <li><a class="dropdown-item" href="/auth/home/registro">Insertar datos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                </ul>
+              </li>
+          </div>
+        </div>
+        
+      </nav>
+
+        

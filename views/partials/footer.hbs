@@ -1,0 +1,21 @@
+
+<div class="footer">
+            <footer>
+                <p>Elaborado por &copy;{{data}} <span id="span"></span></p> 
+            </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+    <script>
+        const span = document.getElementById("span");
+        const fecha = new Date().toLocaleDateString()
+        span.style.color  = "#48e";
+        span.innerHTML = fecha;
+
+    </script>
+
+</body>
+</html>
